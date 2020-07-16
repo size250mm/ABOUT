@@ -1,0 +1,68 @@
+@charset "UTF-8";
+
+
+
+
+
+*{padding: 0; margin: 0; position: relative;
+font-family: 'Noto Sans KR', sans-serif;}
+img{}
+ol,ul,li{list-style: none;}
+a{cursor: pointer; text-decoration: none;}
+button{}
+input{}
+body{}
+
+
+.about{width: 100%; background: #000; }
+.about .main{width: 100%; height: 100vh; display: flex; flex-direction: column; align-items: center; justify-content: center;}
+.about .main .text-group{color: #fff;}
+.about .main .text-group p{text-align: center; font-size: 50px; font-weight: 900; text-transform: uppercase;}
+.about .main .text-group p:first-child{text-align: center; font-size: 150px; font-weight: 900; text-transform: uppercase;}
+
+.about .my-info{display: flex; flex-direction: column; align-items: center; justify-content: center;  height: 150vh; }
+.about .my-info .text-group{color: #fff; position: absolute; bottom: 20%;}
+
+.about .my-info  .text-group p{text-align: right; font-size: 40px; font-weight: 900; text-transform: uppercase;}
+.about .my-info  .text-group p:first-child{text-align: right; font-size: 100px; font-weight: 900; text-transform: uppercase;}
+.about .me{width: 100%; height: 120vh; display: flex; justify-content: center; align-items: center;}
+.about .me .text-group{display: flex; color: #fff; justify-content: space-between; width: 80%;}
+.about .me .text-group .me-title{font-size: 200px; font-weight: 900; text-transform: uppercase; display: flex; align-content: center; justify-content: center; flex-direction: column;}
+.about .me .text-group ol{display: flex; flex-direction: column; align-content: center; justify-content: center;}
+.about .me .text-group ol li{font-size: 30px; font-weight: 500;}
+.about .me .text-group .me-sub{font-size: 50px; font-weight: 500;
+display: flex; align-content: center; justify-content: center; flex-direction: column;}
+
+.about .skills{width: 100%; height: 120vh;}
+.about .skills .skill-group{width: 100%; display: flex; flex-direction: column; justify-content: center; align-items: center;}
+.about .skills .skill-group .text-group .skills-title{text-align: center; font-size: 200px; font-weight: 900; text-transform: uppercase;}
+.about .skills .text-group{color: #fff; width: 80%; height: 100%;}
+.about .skills .text-group ol{width: 100%; height: 100%; display: flex; flex-direction: column; justify-content: center; align-items: center; margin-top: 50px;}
+.about .skills .text-group ol li{width: 60%; height: 10%; display: flex; justify-content: flex-start; align-items: center;}
+.about .skills .text-group ol li .skill-bar{display: block; width: 0%; height: 15px; background: #fff; border-radius: 15px; margin-left: 30px;}
+
+@media (max-width : 1000px){
+    .about .main .text-group p{font-size: 32px;}
+    .about .main .text-group p:first-child{font-size: 100px;}
+    .about .my-info .text-group p{font-size: 32px; text-align: center;}
+    .about .my-info  .text-group p:first-child{font-size: 30px; text-align: center;}
+    .me .text-group{display: flex !important; flex-direction: column;}
+    .skills-title p{font-size: 50px;}
+    
+}
+
+@media (max-width : 600px){
+    .about .main .text-group p{font-size: 24px;}
+    .about .main .text-group p:first-child{font-size: 80px;}
+    .about .my-info .text-group p{font-size: 24px;}
+    
+    .me .text-group ol li{font-size: 20px;}
+    .me .text-group .me-sub{font-size: 28px;}
+    .me .text-group .me-title{font-size: 28px;}
+}
+
+.right-probar{position: fixed; top: calc(50% - 25%); right: 0; height: 50%; width: 80px; z-index: 9000;}
+
+.right-probar .right-probar-group{width: 100%; height: 100%; display: flex; flex-direction: column; justify-items: center; justify-content: center;}
+.right-probar .right-probar-group .right-pro-base{height: 100%; width: 1px; background: #333; position: absolute; left: calc(50% - .5px); top: 0;}
+.right-probar .right-probar-group .right-pro-down{height: 0%; width: 3px; background: #fff; position: absolute; left: calc(50% - 1.5px); top: 0;}
