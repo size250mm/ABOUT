@@ -33,7 +33,7 @@ body{}
 .about .me .text-group .me-sub{font-size: 50px; font-weight: 500;
 display: flex; align-content: center; justify-content: center; flex-direction: column;}
 
-.about .skills{width: 100%; height: 120vh;}
+.about .skills{width: 100%; height: 100vh;}
 .about .skills .skill-group{width: 100%; display: flex; flex-direction: column; justify-content: center; align-items: center;}
 .about .skills .skill-group .text-group .skills-title{text-align: center; font-size: 200px; font-weight: 900; text-transform: uppercase;}
 .about .skills .text-group{color: #fff; width: 80%; height: 100%;}

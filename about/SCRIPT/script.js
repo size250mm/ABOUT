@@ -85,14 +85,20 @@ $('.ham-btn').click(function(){
 //          page--
 //       
 //      }
-        if(win_top > skills_top){
+        if(percent >= 90){
           $('.skills').find('span').eq(0).stop().animate({width:'60'+'%'})
            $('.skills').find('span').eq(1).stop().animate({width:'50'+'%'})
            $('.skills').find('span').eq(2).stop().animate({width:'40'+'%'})
            $('.skills').find('span').eq(3).stop().animate({width:'20'+'%'})
            $('.skills').find('span').eq(4).stop().animate({width:'20'+'%'})
       }
-        
+         if(percent < 89){
+          $('.skills').find('span').eq(0).stop().animate({width:'0'+'%'})
+           $('.skills').find('span').eq(1).stop().animate({width:'0'+'%'})
+           $('.skills').find('span').eq(2).stop().animate({width:'0'+'%'})
+           $('.skills').find('span').eq(3).stop().animate({width:'0'+'%'})
+           $('.skills').find('span').eq(4).stop().animate({width:'0'+'%'})
+      }
         
         
       }
